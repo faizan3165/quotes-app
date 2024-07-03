@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: quote_editor
+
+test:
+  <<: *default
+  database: quote_editor
+
+production:
+  <<: *default
+  database: quotes_db_wr7c
+  username: quotes_db_wr7c_user
+  password: meTv3GQSwVRa5BrY8ZweWJa3pbp8pCs7

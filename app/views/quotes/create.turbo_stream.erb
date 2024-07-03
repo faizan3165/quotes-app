@@ -1,0 +1,7 @@
+<%= turbo_stream.prepend "quotes" do %>
+    <%= render @quote %>
+<% end %>
+
+<%= turbo_stream.update Quote.new, "" %>
+<%= render_turbo_stream_flash_messages %>
+
