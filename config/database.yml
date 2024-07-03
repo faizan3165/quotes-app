@@ -13,6 +13,7 @@ test:
 
 production:
   <<: *default
+  url: postgresql://quotes_db_wr7c_user:meTv3GQSwVRa5BrY8ZweWJa3pbp8pCs7@dpg-cq2br35ds78s73ebjft0-a/quotes_db_wr7c
   database: quotes_db_wr7c
   username: quotes_db_wr7c_user
   password: meTv3GQSwVRa5BrY8ZweWJa3pbp8pCs7
